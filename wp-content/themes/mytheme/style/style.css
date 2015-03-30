@@ -1,0 +1,284 @@
+body {
+	background: url(../images/brickwall.png);
+}
+
+.container {
+	background: #fff;
+	border-left: 1px solid #dfdddd;
+	border-right: 1px solid #dfdddd;
+}
+
+/* Шапка */
+header {
+	height: 120px;
+}
+
+	/* Логотип или другая инфа */
+header .info {
+	float: left;
+	width: 520px;
+	padding-left: 9px;
+	color: #1b1c1c;
+}
+
+	/* Баннер в шапке */
+header .banner {
+	width: 400px;
+	height: 90px;
+	outline: 1px solid #ccc;
+	float: left;
+	margin-top: 10px;
+}
+
+/* Навигация */
+.navbar {
+	margin: 0 auto 10px auto;
+	width: 98%;
+	clear: both;
+}
+
+	/* Выпадающее меню */
+#nav .sub-menu {
+  	position: absolute;
+  	left: -999em;
+  	height: auto;
+  	width: 151px;
+  	font-weight: normal;
+  	line-height: 20px;
+  	z-index: 99999;
+  	list-style: none;
+  	margin: 0; 
+  	border: 1px solid #ccc;
+  	border-radius: 6px;
+  	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  	background: #fff;
+  	padding: 5px 0;
+}
+
+	/* Ссылки выпадающего меню */
+#nav .sub-menu li a {
+  	padding: 3px 8px;
+  	display: block;
+  	color: #000;
+}
+
+	/* Навод на ссылки выпадающего меню */
+#nav .sub-menu li a:hover { 
+	color: #fff;
+	text-decoration: none;
+	background: #0081c2;
+	background-image:-moz-linear-gradient(top,#08c,#0077b3);
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#0077b3));
+	background-image:-webkit-linear-gradient(top,#08c,#0077b3);
+	background-image:-o-linear-gradient(top,#08c,#0077b3);
+	background-image:linear-gradient(to bottom,#08c,#0077b3);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0077b3',GradientType=0)
+}
+
+	/* Функционал выпадающего списка */
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul, #nav li.sfhover ul ul ul ul { left: -999em; }
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul, #nav li li li li.sfhover ul { left: auto; }
+
+	/* Текущий пункт меню */
+#nav li.current_page_item a { 
+	color: #000; 
+}
+
+/* Контент */
+.content {
+	width: 660px;
+	padding: 10px;
+}
+.content-full {
+	padding: 10px;
+}
+
+/* Статья */
+.post {overflow: hidden;}
+.post .image {
+	width: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
+.post h1 {
+	font-size: 24px;
+	line-height: 26px;
+	margin: 10px 0;
+}
+
+.post h1 span {
+	font-size: 18px;
+}
+
+.meta {
+	font-size: 12px;
+	padding: 5px;
+}
+
+/* Постраничная навигация */
+.wp-pagenavi {
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+	display: inline-block;
+	margin: 10px 0;
+}
+.wp-pagenavi a:nth-child(2), .wp-pagenavi span:nth-child(2) {
+	border-radius: 4px 0 0 4px;
+}
+.wp-pagenavi a:last-child, .wp-pagenavi span:last-child {
+	border-radius: 0 4px 4px 0;
+}
+
+.wp-pagenavi .pages {
+	display: none;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	margin: 0 0 0 -1px;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 4px 12px;
+	line-height: 20px;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	background: #f5f5f5;
+	color: #999;
+}
+
+/* Комментарии + форма */
+
+	/* Контейнер комментария */
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	width: 650px;
+	margin: 10px auto;
+	display: table;
+}
+
+.commentlist .comment {
+	padding: 5px;
+	list-style: none;
+	display: block;
+}
+
+.commentlist .comment .comment {
+	margin: 10px 10px 10px 10px;
+	padding: 5px;
+	width: auto;
+}
+
+	/* Аватарка, имя */
+.comment-author {
+	width: 80px;
+	float: left;
+	text-align: center;
+}
+
+	/* Имя автора */
+.comment-author .fn {
+	font-weight: bold;
+}
+
+	/* двоеточие */
+.comment-author .says {
+	display: none;
+}
+
+	/* Сама аватарка тег img */
+.avatar {
+	width: 60px;
+	border-right: 1px solid #dedcdc;
+	border-bottom: 1px solid #dedcdc;
+	padding: 5px;
+	background: #f8f6f6;
+}
+
+	/* Дата добавления */
+.comment-meta {
+	width: 83%;
+	float: left;
+	border-bottom: 1px dashed #84a719;
+}
+
+	/* Текст комментария */
+.commentlist p {
+	margin: 15px 0 0px 20px;
+	padding-bottom: 10px;
+	width: 80%;
+	float: left;
+	border-bottom: 1px dashed #84a719;
+}
+
+	/* Кнопка "Ответить" */
+.commentlist .reply {
+	width: 98%;
+	float: left;
+	text-align: right;
+	padding: 0 0 5px 0;
+}
+
+	/* Форма отправки комментария */
+.form textarea {
+	resize: vertical;
+	width: 500px;
+	height: 150px;
+}
+
+/* Сайдбар */
+.sidebar {
+	padding: 10px;
+	width: 239px;
+	border-left: 1px dashed #ccc;
+}
+
+.sidebar-header {
+	font-size: 20px;
+	line-height: 23px;
+	margin: 0 0 5px 0;
+}
+
+/*Форма поиска*/
+
+#searchform input[type=text] {
+	width: 140px;
+}
+
+/* Футер */
+footer {
+	background: url(../images/simple_dashed.png);
+	padding: 15px;
+	color: #fff;
+	clear: both;
+}
+
+footer a {
+	color: #26b5f7;
+}
+
+footer a:hover {
+	color: #26b5f7;
+}
+
+.footer-widget {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-widget h2 {
+	color: #26b5f7;
+	font-size: 18px;
+	margin: 4px 0;
+	line-height: 22px;
+}
